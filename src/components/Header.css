@@ -1,0 +1,37 @@
+.header-onay {
+  width: 100%;
+  background-color: #ce2829;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 40px 20px; 
+}
+
+.header-onay .header-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto; 
+  width: 100%;
+}
+
+.header-onay .header-inner h1 {
+  font-family: 'Roboto Condensed', Arial, sans-serif;
+  font-size: 28px; 
+  text-align: center;
+  margin: 0;
+  padding-bottom: 10px;
+}
+.header-onay .breadcrumb {
+  font-size: 0.9rem;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.header-inner h1{
+  color: white;
+  font-family: 'Roboto Condensed', Arial, sans-serif;
+  font-size: 25px; 
+}

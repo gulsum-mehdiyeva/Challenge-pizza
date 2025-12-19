@@ -1,0 +1,450 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.form-container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 60px 20px 40px; 
+  background-color: white;
+  font-family: 'Barlow', sans-serif;
+}
+
+.pizza-card {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: white;
+  position: relative;
+}
+
+.pizza-tanim {
+  font-size: 16px;
+  color: #333;
+  text-align: left;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.price-rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.price-rating .price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.price-rating .rating {
+  font-size: 14px;
+  color: #777;
+}
+
+.boyut-secim {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.boyut-secim h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.boyut-secim label {
+  display: block;
+  margin-bottom: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.hamur-secim {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.hamur-secim h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.hamur-secim select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.ekstra-malzemeler {
+  width: 100%;
+  margin: 20px 0;
+    margin-left: 20px; 
+
+}
+
+.ekstra-baslik {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: black;
+  font-weight: bold;
+    margin-left: -400px !important;
+
+}
+
+.ekstra-malzemeler p {
+  font-size: 14px;
+  color: black;
+  margin-bottom: 10px;
+  margin-left: -270px;
+}
+
+.malzeme-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  width: 100%;
+}
+
+.malzeme-grid label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.siparis-notu {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.siparis-notu h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.siparis-notu-textarea {
+  width: 100%;
+  min-height: 80px;
+  padding: 10px;
+  font-size: 14px;
+  resize: vertical;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  font-family: inherit;
+}
+
+.sayi-toplam-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  gap: 10px;
+}
+
+.sayi-kontrol {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.sayi-kontrol button {
+  width: 36px;
+  height: 36px;
+  border: 1px solid #ccc;
+  background-color: #FFC107;
+  color: #000;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.sayi-deger {
+  width: 40px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  background-color: white;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 -2px 4px rgba(0,0,0,0.15),
+              0 2px 4px rgba(0,0,0,0.15);
+}
+
+.SiparisToplami {
+  width: 100%;
+  max-width: 250px;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  font-size: 14px;
+}
+
+.SiparisToplami p {
+  margin: 5px 0;
+}
+
+.SiparisToplami .siparis {
+  font-weight: bold;
+}
+
+.SiparisToplami .secim2,
+.SiparisToplami .fiyat2 {
+  color: red;
+  font-weight: 600;
+}
+
+
+.siparis-ver-button {
+  width: 100%;
+  max-width: 200px;
+  margin: 20px auto;
+  background-color: #FDC913;
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 50px;
+  font-family: 'Barlow', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.2s;
+  margin-left: 230px;
+  margin-top: -100px;
+}
+
+.siparis-ver-button:hover {
+  background-color: #FFB800;
+}
+
+.form-container input[type="text"] {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  margin: 0 auto 15px;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.buton-devam {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  background-color: #FDC913;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 50px;
+  font-family: 'Barlow', sans-serif;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.buton-devam:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.form-message {
+  color: green;
+  background-color: lightgrey;
+  padding: 15px;
+  text-align: center;
+  margin: 20px auto 40px;
+  border-radius: 8px;
+  max-width: 500px;
+  font-size: 16px;
+}
+
+.error-text {
+  color: red;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+.secim-row {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto 20px;
+  display: flex;
+  gap: 20px; 
+}
+
+.boyut-secim,
+.hamur-secim {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.boyut-secim h3,
+.hamur-secim h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.boyut-secim label {
+  display: block;
+  margin-bottom: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.hamur-secim select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: inherit;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;      
+  text-align: left;
+  line-height: 1.5;
+}
+.ekstra-baslik {
+  font-weight: 600;
+  font-size: 16px;
+  margin-left: -350px; 
+}
+.SiparisToplami p {
+  display: flex;
+  justify-content: space-between; 
+  margin: 0;                     
+  padding: 0 10px;                 
+}
+
+.SiparisToplami p span {
+  margin-left: 10px;              
+  font-weight: 600;
+  white-space: nowrap;
+}
+.hamur-secim select {
+  width: 70%;     
+  max-width: 200px;  
+  margin-left: 70px; 
+}
+.hamur-secim {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  margin: 0;
+  padding: 0;
+}
+
+.hamur-secim h3 {
+  margin: 0 0 5px 0; 
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.hamur-secim select {
+  width: 100%;      
+  max-width: 300px;  
+  padding: 8px;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: inherit;
+  margin: 0;         
+}
+
+.boyut-secim {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  margin: 0;
+  padding: 0 20px; 
+}
+
+.boyut-secim h3 {
+  margin: 0 0 5px 0; 
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+}
+
+.boyut-secim label {
+  display: flex;
+  align-items: center;
+  gap: 6px; 
+  font-size: 14px;
+  cursor: pointer;
+  margin: 0; 
+}
+.form-container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 120px 20px 40px; 
+  background-color: white;
+  font-family: 'Barlow', sans-serif;
+}
+.form-container input[type="text"] {
+  margin-top: -100px; 
+}
+.pizza-card {
+  margin-top:-510px; 
+}
+.not-kaydet-button {
+  background-color: #FDC913; 
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  font-family: 'Barlow', sans-serif;
+  margin-top: 10px; 
+  transition: background-color 0.2s;
+  display: inline-block; 
+}
+
+.not-kaydet-button:hover {
+  background-color: #FFB800; 
+}
+
+.not-kaydet-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
