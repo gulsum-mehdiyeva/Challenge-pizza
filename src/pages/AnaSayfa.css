@@ -1,5 +1,5 @@
 .anasayfa {
-  background-image: url('../images/iteration-1-images/home-banner.png');
+background-image: url('/images/iteration-1-images/home-banner.png');
   background-size: contain;        
   background-position: left top; 
   background-repeat: no-repeat;
